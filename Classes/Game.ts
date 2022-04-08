@@ -55,11 +55,15 @@ export class Game {
 	}
 
 	afficherGagnant() {
+		let arrayScore : Array<number>;
 		
 		this.nbPlayers.forEach(player => {
-		
-		
+			
+			arrayScore.push(player.score)
+			arrayScore.sort();
+			
 		})
+	console.log(arrayScore);
 
 		
 		
