@@ -1,11 +1,15 @@
 export class Dice {
 
-	valueDice : number ; 
+	valueDice! : number ; 
+	nbFaces! : number
 
-	constructor(valueDice : number) {
 	
-		this.valueDice = valueDice;
-	
+	/**
+	 * Methode qui va lancer LE dé et retourner une value
+	 */
+	lancer(nbFaces : number) : void {
+		this.valueDice = Math.floor(Math.random() * nbFaces);
+		console.log(this.valueDice);
 	}
 
 }
