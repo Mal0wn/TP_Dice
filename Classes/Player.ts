@@ -1,28 +1,35 @@
+import { Cup } from "./Cup"
+
 export class Player {
 
 name: string ; 
 	score : number;
+	nbTrWi : number;
 
-	constructor(name : string) {
+	constructor(name : string ) {
 	
-	this.name = name;
+		this.name = name;
+		this.nbTrWi = 0;
+		this.score = 0;
 	}
 
 	/**
 	 * 
 	 * @param Cup : Methode qui prend en parametre Cup et qui permet de jouer
 	 */
-	play(Cup) {
+	play(cup : Cup ) {
 	
+	cup.lancerCup;
+	this.score = cup.valueDice ;
+	this.nbTrWi += this.nbTrWi;
+		
 	
 	}
 
 
-	/**
-	 * Methode pour afficher le score du joueur
-	 */
-	displayScore() {
 	
+	displayScore(cup : Cup) {
+	cup.afficherScore
 	}
 
 
