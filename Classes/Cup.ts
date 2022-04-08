@@ -4,4 +4,12 @@ export class Cup {
 
 	
 
+	lancer() {
+	
+	}
+
+	afficherScore() {
+	
+	}
+
 }
